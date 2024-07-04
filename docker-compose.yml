@@ -33,6 +33,7 @@ services:
       - net.ipv4.conf.all.route_localnet=1
 
   db:
+    platform: linux/x86_64
     image: mysql:5.7
     restart: always
     environment:
